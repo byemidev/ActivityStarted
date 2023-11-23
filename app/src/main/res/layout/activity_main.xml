@@ -10,18 +10,54 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Practicando android studio!"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id= "@+id/edit_text_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIVIDAD 1"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_marca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ir a Marca"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir a Google"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="launchIntent"
+        android:translationY="45dp"
+        />
+
+    <Button
+        android:id="@+id/button_ir_act2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ir a actividad 2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:translationY="300dp"
+        android:translationX="65dp"
+        android:onClick="switch_act2"
         />
 </RelativeLayout>
